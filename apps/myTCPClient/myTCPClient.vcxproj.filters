@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPServer.cpp">
+      <Filter>ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxUDPManager.cpp">
+      <Filter>ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPClient.cpp">
+      <Filter>ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPManager.cpp">
+      <Filter>ofxNetwork\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPManager.h">
+      <Filter>ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPServer.h">
+      <Filter>ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxUDPManager.h">
+      <Filter>ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxNetwork.h">
+      <Filter>ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxNetworkUtils.h">
+      <Filter>ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPClient.h">
+      <Filter>ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pixelClient.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ofxNetwork">
+      <UniqueIdentifier>{0b3b1f7f-3e91-4f59-ac3d-e558ecd5a5a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxNetwork\src">
+      <UniqueIdentifier>{82009024-1ac4-4ac1-860e-f4f04b95d84d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

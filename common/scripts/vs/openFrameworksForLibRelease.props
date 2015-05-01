@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_PropertySheetDisplayName>openFrameworksForLibRelease</_PropertySheetDisplayName>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\openframeworks\libs\openFrameworks;..\..\..\..\openframeworks\libs\openFrameworks\graphics;..\..\..\..\openframeworks\libs\openFrameworks\app;..\..\..\..\openframeworks\libs\openFrameworks\sound;..\..\..\..\openframeworks\libs\openFrameworks\utils;..\..\..\..\openframeworks\libs\openFrameworks\communication;..\..\..\..\openframeworks\libs\openFrameworks\video;..\..\..\..\openframeworks\libs\openFrameworks\types;..\..\..\..\openframeworks\libs\openFrameworks\math;..\..\..\..\openframeworks\libs\openFrameworks\3d;..\..\..\..\openframeworks\libs\openFrameworks\gl;..\..\..\..\openframeworks\libs\openFrameworks\events;..\..\..\..\openframeworks\libs\glut\include;..\..\..\..\openframeworks\libs\rtAudio\include;..\..\..\..\openframeworks\libs\quicktime\include;..\..\..\..\openframeworks\libs\freetype\include;..\..\..\..\openframeworks\libs\freetype\include\freetype2;..\..\..\..\openframeworks\libs\freeImage\include;..\..\..\..\openframeworks\libs\fmodex\include;..\..\..\..\openframeworks\libs\videoInput\include;..\..\..\..\openframeworks\libs\glew\include\;..\..\..\..\openframeworks\libs\glu\include;..\..\..\..\openframeworks\libs\tess2\include;..\..\..\..\openframeworks\libs\cairo\include\cairo;..\..\..\..\openframeworks\libs\poco\include;..\..\..\..\openframeworks\libs\glfw\include;..\..\..\..\openframeworks\libs\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\..\openframeworks\libs\glut\lib\vs;..\..\..\..\openframeworks\libs\glfw\lib\vs;..\..\..\..\openframeworks\libs\rtAudio\lib\vs;..\..\..\..\openframeworks\libs\FreeImage\lib\vs;..\..\..\..\openframeworks\libs\freetype\lib\vs;..\..\..\..\openframeworks\libs\quicktime\lib\vs;..\..\..\..\openframeworks\libs\fmodex\lib\vs;..\..\..\..\openframeworks\libs\videoInput\lib\vs;..\..\..\..\openframeworks\libs\cairo\lib\vs;..\..\..\..\openframeworks\libs\glew\lib\vs;..\..\..\..\openframeworks\libs\glu\lib\vs;..\..\..\..\openframeworks\libs\openssl\lib\vs;..\..\..\..\openframeworks\libs\Poco\lib\vs;..\..\..\..\openframeworks\libs\tess2\lib\vs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;Vfw32.lib;comctl32.lib;glut32.lib;rtAudio.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;crypt32.lib;libeay32MD.lib;ssleay32MD.lib;PocoFoundationmd.lib;PocoNetmd.lib;PocoUtilmd.lib;PocoXMLmd.lib;Ws2_32.lib;tess2.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>PocoFoundationd.lib;atlthunk.lib;LIBC.lib;LIBCMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
