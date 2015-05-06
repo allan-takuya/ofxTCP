@@ -15,6 +15,12 @@
       <Filter>ofxNetwork\src</Filter>
     </ClCompile>
     <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageClient.cpp">
+      <Filter>ofxTCPImage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageServer.cpp">
+      <Filter>ofxTCPImage\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />
@@ -40,6 +46,15 @@
     </ClInclude>
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="src\pixelServer.h" />
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageServer.h">
+      <Filter>ofxTCPImage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageClient.h">
+      <Filter>ofxTCPImage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxTCPImage\libs\turbo-jpeg\include\turbojpeg.h">
+      <Filter>ofxTCPImage\libs\turbo-jpeg\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="ofxNetwork">
@@ -47,6 +62,21 @@
     </Filter>
     <Filter Include="ofxNetwork\src">
       <UniqueIdentifier>{b3718134-c8f6-46ac-b4d4-b9825c2dcd22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTCPImage">
+      <UniqueIdentifier>{39ecf80e-4e79-4080-8214-ab8d89cdc71f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTCPImage\src">
+      <UniqueIdentifier>{a4c4229a-ffd1-4d0c-9d7a-3b0dd41a27e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTCPImage\libs">
+      <UniqueIdentifier>{d5fc8c9f-7589-4462-adde-e9adec7845b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTCPImage\libs\turbo-jpeg">
+      <UniqueIdentifier>{ddda22de-c702-4c82-8eb0-78eec4e3973a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTCPImage\libs\turbo-jpeg\include">
+      <UniqueIdentifier>{0b014f79-437c-4cf4-9e58-b8492d8c1d8b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

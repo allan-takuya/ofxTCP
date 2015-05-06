@@ -31,11 +31,13 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\common\scripts\vs\ofxNetwork.props" />
+    <Import Project="..\..\common\scripts\vs\ofxTCPImage.props" />
     <Import Project="..\..\common\scripts\vs\openFrameworksRelease.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\common\scripts\vs\ofxNetwork.props" />
+    <Import Project="..\..\common\scripts\vs\ofxTCPImage.props" />
     <Import Project="..\..\common\scripts\vs\openFrameworksDebug.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -96,6 +98,8 @@
     <ClCompile Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPManager.cpp" />
     <ClCompile Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPServer.cpp" />
     <ClCompile Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxUDPManager.cpp" />
+    <ClCompile Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageClient.cpp" />
+    <ClCompile Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageServer.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
   </ItemGroup>
@@ -106,8 +110,10 @@
     <ClInclude Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPManager.h" />
     <ClInclude Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPServer.h" />
     <ClInclude Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxUDPManager.h" />
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxTCPImage\libs\turbo-jpeg\include\turbojpeg.h" />
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageClient.h" />
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageServer.h" />
     <ClInclude Include="src\ofApp.h" />
-    <ClInclude Include="src\pixelClient.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\common\openframeworks\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

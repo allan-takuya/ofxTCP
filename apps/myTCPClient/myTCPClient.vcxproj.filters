@@ -15,6 +15,12 @@
     <ClCompile Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPManager.cpp">
       <Filter>ofxNetwork\src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageServer.cpp">
+      <Filter>ofxTCPImage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageClient.cpp">
+      <Filter>ofxTCPImage\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />
@@ -39,7 +45,15 @@
     <ClInclude Include="..\..\common\openframeworks\addons\ofxNetwork\src\ofxTCPClient.h">
       <Filter>ofxNetwork\src</Filter>
     </ClInclude>
-    <ClInclude Include="src\pixelClient.h" />
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageServer.h">
+      <Filter>ofxTCPImage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxTCPImage\src\ofxTCPImageClient.h">
+      <Filter>ofxTCPImage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\openframeworks\addons\ofxTCPImage\libs\turbo-jpeg\include\turbojpeg.h">
+      <Filter>ofxTCPImage\libs\turbo-jpeg\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="ofxNetwork">
@@ -47,6 +61,21 @@
     </Filter>
     <Filter Include="ofxNetwork\src">
       <UniqueIdentifier>{82009024-1ac4-4ac1-860e-f4f04b95d84d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTCPImage">
+      <UniqueIdentifier>{802cc917-5dee-45d3-bbe0-b95b1a667c56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTCPImage\src">
+      <UniqueIdentifier>{d4d8ec13-88b3-4e92-92da-576b69f259b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTCPImage\libs">
+      <UniqueIdentifier>{a97b25a3-2877-49d8-96db-7262db1f161e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTCPImage\libs\turbo-jpeg">
+      <UniqueIdentifier>{6d5ca762-44ce-4b40-ac85-05f19a2feda5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTCPImage\libs\turbo-jpeg\include">
+      <UniqueIdentifier>{df8f588b-d126-4e33-9b97-f332f0a04772}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
