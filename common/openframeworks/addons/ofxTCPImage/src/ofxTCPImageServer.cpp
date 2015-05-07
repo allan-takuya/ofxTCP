@@ -65,6 +65,7 @@ bool ofxTCPImageServer::sendImage(unsigned char * pixelData, int w, int h, int j
 //-----------------------------------------------------
 void ofxTCPImageServer::update(int numToSend){
 
+	std::cout << mTCP.getNumClients() << std::endl;
 	if( mNumSentBytes >= mTotalBytes ){
 		mState = READY;
 		tjFree(mData);
@@ -83,7 +84,7 @@ void ofxTCPImageServer::update(int numToSend){
 	}
 	if(mState == INFORSENDING){
 		//send data size
-		unsigned char data[INFOSIZE];
+		char data[INFOSIZE];
 		for(int i(0); i < 4; i++){
 			data[0+i%4] = mTotalBytes >> 8*i;
 			data[4+i%4] = mWidth >> 8*i;
@@ -92,4 +93,9 @@ void ofxTCPImageServer::update(int numToSend){
 		mTCP.sendRawBytesToAll((char *)&data[0], 12);
 		mState = DATASENDING;
 	}
+}
+
+void ofxTCPImageServer::testsend(){
+	char data[5] = {'a', 'b', 'c', 'd', 'e'};
+	mTCP.sendRawBytesToAll(&data[0], 5);
 }

@@ -21,6 +21,7 @@ public:
 	void setup(int port = 11999);
 	bool sendImage(unsigned char * pixelData, int w, int h, int jpegQuality);
 	void update(int numToSend = 2048);
+	void testsend();
 
 private:
 	ofxTCPServer mTCP;

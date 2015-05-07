@@ -36,7 +36,7 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::keyPressed  (int key){
 	if( key == 'c'){
-		mTCPImageClient.setup("192.168.11.4", 12354);
+		mTCPImageClient.setup("192.168.11.2", 12354);
 	}
 	if(key == 'r'){
 		mTCPImageClient.reset();

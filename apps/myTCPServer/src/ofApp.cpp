@@ -10,7 +10,7 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-	mTCPImageServer.update(1024*100);
+	mTCPImageServer.update(1024);
 }
 
 //--------------------------------------------------------------
@@ -35,7 +35,7 @@ void ofApp::keyPressed  (int key){
 		mTCPImageServer.sendImage(pix, testImg.getWidth(), testImg.getHeight(), 75);
 	}
 	if( key == 'd'){
-
+		mTCPImageServer.testsend();
 	}
     
 }
